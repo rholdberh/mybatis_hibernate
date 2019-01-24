@@ -1,0 +1,11 @@
+# -- IDEA files
+.idea
+*.iml
+*.ipr
+*.iws
+target
+
+# -- other files
+*.log
+*.MF
+.json
