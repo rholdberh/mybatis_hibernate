@@ -6,7 +6,7 @@ import java.util.List;
 public class Subscriber {
     private Long id;
     private String name;
-    private Tariff tariff;
+    private String refTariff;
 //    private List<Payment> payments;
 
     public Long getId() {
@@ -25,12 +25,12 @@ public class Subscriber {
         this.name = name;
     }
 
-    public Tariff getTariff() {
-        return tariff;
+    public String getRefTariff() {
+        return refTariff;
     }
 
-    public void setTariff(Tariff tariff) {
-        this.tariff = tariff;
+    public void setRefTariff(String refTariff) {
+        this.refTariff = refTariff;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class Subscriber {
         return "Subscriber{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", tariff=" + tariff +
+                ", tariff=" + refTariff +
                 '}';
     }
 

@@ -16,6 +16,7 @@
                 <property name="url" value="${db.url}"/>
                 <property name="username" value="${db.username}"/>
                 <property name="password" value="${db.password}"/>
+                <property name="defaultAutoCommit" value="true" />
             </dataSource>
         </environment>
     </environments>
@@ -24,4 +25,5 @@
         <mapper resource="PaymentMapper.xml"/>
         <mapper resource="SubscriberMapper.xml"/>
     </mappers>
+
 </configuration>

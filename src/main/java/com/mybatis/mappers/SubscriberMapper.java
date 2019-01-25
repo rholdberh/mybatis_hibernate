@@ -12,4 +12,6 @@ public interface SubscriberMapper {
 
     Integer getNumberOfSubscribers();
 
+    void insertSubscriber(Subscriber sub);
+
 }

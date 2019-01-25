@@ -16,4 +16,11 @@
     <select id="getNumberOfSubscribers" resultType="java.lang.Integer">
         select count(*) from "SCHEMA_TEST_ROMAN"."SUBSRIBER"
     </select>
+
+    <insert id="insertSubscriber"
+            parameterType="com.mybatis.Subscriber"
+            keyColumn="id">
+        INSERT INTO "SCHEMA_TEST_ROMAN"."SUBSRIBER"(id,NAME,REF_TARIFF) VALUES (#{id},#{name},#{refTariff})
+    </insert>
+
 </mapper>
