@@ -1,6 +1,6 @@
 package com.mybatis.mappers;
 
-import dbObjects.Payment;
+import com.dbObjects.Payment;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package dbObjects;
+package com.dbObjects;
 
 public class Tariff {
     private Long id;

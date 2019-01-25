@@ -1,4 +1,4 @@
-package dbObjects;
+package com.dbObjects;
 
 public class Payment {
     private Long id;

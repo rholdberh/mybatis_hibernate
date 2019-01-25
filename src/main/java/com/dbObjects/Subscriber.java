@@ -1,7 +1,4 @@
-package dbObjects;
-
-import java.sql.Connection;
-import java.util.List;
+package com.dbObjects;
 
 public class Subscriber {
     private Long id;
