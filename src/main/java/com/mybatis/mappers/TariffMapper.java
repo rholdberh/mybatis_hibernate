@@ -1,6 +1,6 @@
 package com.mybatis.mappers;
 
-import com.mybatis.Tariff;
+import dbObjects.Tariff;
 
 public interface TariffMapper {
     Tariff getTariffById(Integer id);

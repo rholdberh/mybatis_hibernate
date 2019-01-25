@@ -1,4 +1,4 @@
-package com.mybatis;
+package dbObjects;
 
 public class Product {
 

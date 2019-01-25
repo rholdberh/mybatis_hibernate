@@ -1,7 +1,7 @@
 package com.mybatis;
 
-import com.mybatis.mappers.ProductMapper;
 import com.mybatis.mappers.SubscriberMapper;
+import dbObjects.Subscriber;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
