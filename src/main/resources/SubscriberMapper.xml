@@ -5,9 +5,15 @@
         <id property="id" column="id"/>
         <result property="name" column="name"/>
     </resultMap>
+
     <select id="getSubscriberById" parameterType="java.lang.Integer" resultMap="subscriber">
         select * from "SCHEMA_TEST_ROMAN"."SUBSRIBER" where id = #{id}
     </select>
+
+    <select id="getMaxId" resultType="java.lang.Integer">
+        select max(id) from "SCHEMA_TEST_ROMAN"."SUBSRIBER"
+    </select>
+
 
     <select id="getSubscribers" resultType="java.util.List" resultMap="subscriber">
         select * from "SCHEMA_TEST_ROMAN"."SUBSRIBER"
@@ -19,8 +25,13 @@
 
     <insert id="insertSubscriber"
             parameterType="com.mybatis.Subscriber"
-            keyColumn="id">
-        INSERT INTO "SCHEMA_TEST_ROMAN"."SUBSRIBER"(id,NAME,REF_TARIFF) VALUES (#{id},#{name},#{refTariff})
+            keyColumn="id"
+            useGeneratedKeys = "true"
+            keyProperty = "id">
+        <selectKey resultType="java.lang.Long" order="BEFORE" keyProperty="id">
+            select max(id) from "SCHEMA_TEST_ROMAN"."SUBSRIBER"
+        </selectKey>
+        INSERT INTO "SCHEMA_TEST_ROMAN"."SUBSRIBER"(id,NAME,REF_TARIFF) VALUES (#{id}+1,#{name},#{refTariff})
     </insert>
 
 </mapper>

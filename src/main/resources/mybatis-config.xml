@@ -24,6 +24,7 @@
         <mapper resource="TariffMapper.xml"/>
         <mapper resource="PaymentMapper.xml"/>
         <mapper resource="SubscriberMapper.xml"/>
+        <mapper class="com.mybatis.mappers.ProductMapper"/>
     </mappers>
 
 </configuration>

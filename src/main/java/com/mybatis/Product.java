@@ -2,15 +2,15 @@ package com.mybatis;
 
 public class Product {
 
-    private Long id;
+    private Integer id;
     private String name;
 
-    public Long getId() {
+    public Integer getId() {
 
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
 
         this.id = id;
     }
@@ -27,7 +27,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Subscriber{" +
+        return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
