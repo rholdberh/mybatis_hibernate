@@ -12,4 +12,8 @@
     <select id="getSubscribers" resultType="java.util.List" resultMap="subscriber">
         select * from "SCHEMA_TEST_ROMAN"."SUBSRIBER"
     </select>
+
+    <select id="getNumberOfSubscribers" resultType="java.lang.Integer">
+        select count(*) from "SCHEMA_TEST_ROMAN"."SUBSRIBER"
+    </select>
 </mapper>

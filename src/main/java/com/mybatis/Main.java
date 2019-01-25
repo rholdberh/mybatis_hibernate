@@ -18,7 +18,10 @@ public class Main {
             SubscriberMapper subscriberMapper = sqlSessionFactory.openSession().getMapper(SubscriberMapper.class);
             List subscribers =  subscriberMapper.getSubscribers();
             Subscriber subscriber = subscriberMapper.getSubscriberById(1);
-            System.out.println(subscriber);
+            Integer numberOfSubscribers  = subscriberMapper.getNumberOfSubscribers();
+            System.out.println("First subscriber" +subscriber);
+            System.out.println("All subscribers" +subscribers);
+            System.out.println("Number of subscribers: " + numberOfSubscribers);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -6,8 +6,10 @@ import java.util.List;
 
 public interface SubscriberMapper {
 
-    public Subscriber getSubscriberById(Integer id);
+    Subscriber getSubscriberById(Integer id);
 
-    public List getSubscribers();
+    List getSubscribers();
+
+    Integer getNumberOfSubscribers();
 
 }
