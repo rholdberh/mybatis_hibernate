@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.myhibernate.Entity.PaymentsEntity" table="PAYMENTS" schema="SCHEMA_TEST_ROMAN">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="refSubscriber">
+            <column name="REF_SUBSCRIBER" sql-type="number(*)" precision="2147483646"/>
+        </property>
+        <property name="summa">
+            <column name="SUMMA" sql-type="number(*)" precision="2147483646"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.myhibernate.Entity.ProductEntity" table="PRODUCT" schema="SCHEMA_TEST_ROMAN">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="name">
+            <column name="NAME" sql-type="nvarchar2(255)"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+
+
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    <mapping class="com.myhibernate.Entity.PaymentsEntity"/>
+    <mapping resource="hibernate/PaymentsEntity.hbm.xml"/>
+    <mapping class="com.myhibernate.Entity.ProductEntity"/>
+    <mapping resource="hibernate/ProductEntity.hbm.xml"/>
+    <mapping class="com.myhibernate.Entity.SubsriberEntity"/>
+    <mapping resource="hibernate/SubsriberEntity.hbm.xml"/>
+    <mapping class="com.myhibernate.Entity.TariffEntity"/>
+    <mapping resource="hibernate/TariffEntity.hbm.xml"/>
+
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
