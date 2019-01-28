@@ -1,4 +1,4 @@
-package com.dbObjects;
+package com.mybatis.dbObjects;
 
 public class Payment {
     private Long id;

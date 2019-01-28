@@ -1,6 +1,6 @@
 package com.mybatis.mappers;
 
-import com.dbObjects.Product;
+import com.mybatis.dbObjects.Product;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

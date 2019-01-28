@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mybatis.mappers.PaymentMapper">
-    <resultMap id="payment" type="com.dbObjects.Payment">
+    <resultMap id="payment" type="com.mybatis.dbObjects.Payment">
         <id property="id" column="id"/>
         <result property="summa" column="date"/>
     </resultMap>
@@ -10,11 +10,11 @@
         select * from payment where ref_subscriber = #{id}
     </select>
 
-    <resultMap id="subscriber" type="com.dbObjects.Subscriber">
+    <resultMap id="subscriber" type="com.mybatis.dbObjects.Subscriber">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
         <association property="tariff" column="ref_tariff"
-                     javaType="com.dbObjects.Tariff"
+                     javaType="com.mybatis.dbObjects.Tariff"
                      select="com.mybatis.mappers.TariffMapper.getTariffById" fetchType="eager"/>
         <collection
                 property="payments"

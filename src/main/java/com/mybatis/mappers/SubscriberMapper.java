@@ -1,6 +1,6 @@
 package com.mybatis.mappers;
 
-import com.dbObjects.Subscriber;
+import com.mybatis.dbObjects.Subscriber;
 
 import java.util.List;
 

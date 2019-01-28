@@ -1,4 +1,4 @@
-package com.dbObjects;
+package com.mybatis.dbObjects;
 
 public class Subscriber {
     private Long id;

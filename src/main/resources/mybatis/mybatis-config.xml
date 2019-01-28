@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <properties resource="config.properties">
+    <properties resource="mybatis/config.properties">
     </properties>
     <!--<settings>&lt;!&ndash;project setting&ndash;&gt;-->
         <!--<setting name="logImpl" value="LOG4J"/>-->
@@ -21,9 +21,9 @@
         </environment>
     </environments>
     <mappers><!--project mappers-->
-        <mapper resource="TariffMapper.xml"/>
-        <mapper resource="PaymentMapper.xml"/>
-        <mapper resource="SubscriberMapper.xml"/>
+        <mapper resource="mybatis/TariffMapper.xml"/>
+        <mapper resource="mybatis/PaymentMapper.xml"/>
+        <mapper resource="mybatis/SubscriberMapper.xml"/>
         <mapper class="com.mybatis.mappers.ProductMapper"/>
     </mappers>
 
