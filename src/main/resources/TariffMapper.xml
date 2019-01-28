@@ -5,6 +5,6 @@
         <result property="descr" column="descr"/>
     </resultMap>
     <select id="getTariffById" resultMap="tariff" parameterType="java.lang.Integer">
-        select * from tariff where id = #{id}
+        select * from "SCHEMA_TEST_ROMAN"."TARIFF" where id = #{id}
     </select>
 </mapper>
