@@ -10,4 +10,6 @@ public interface ProductDAO {
 
     ProductEntity getProductBytId(long id);
 
+    void addProduct(ProductEntity product);
+
 }

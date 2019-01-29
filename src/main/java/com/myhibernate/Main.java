@@ -16,6 +16,10 @@ public class Main {
         List<ProductEntity> products = productDAO.getProducts();
         System.out.println(products.size());
 
+        ProductEntity enti = new ProductEntity();
+        enti.setName("bla");
+        productDAO.addProduct(enti);
+
 //        Factory instance = Factory.getInstance();
 //
 //        Collection products = instance.getProductDao().getProducts();
